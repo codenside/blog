@@ -1,0 +1,11 @@
+<div class="widget">
+   <h4>Categories</h4>
+    <ul>
+    {% assign categories_list = site.categories %}
+        {% for category in categories_list %}
+            <li><a href="/category/{{ category[0] | downcase }}">{{ category[0] | capitalize }} ({{ category[1].size }})</a></li>
+        {% endfor %}
+    {% assign categories_list = nil %}
+    </ul>
+</div><br>
+<p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
