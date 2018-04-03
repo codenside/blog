@@ -1,0 +1,2 @@
+Sitemap: https://blog.codebreak.me/sitemap.xml
+User-agent: *
