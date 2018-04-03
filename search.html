@@ -1,0 +1,31 @@
+---
+layout: default
+title: Search
+---
+
+<div class="home">
+    <div class="container">
+        <div class="row">
+            <div class="eight columns" id="search">
+                <h4 class="nopost">No posts found!</h4>
+            </div>
+            <div class="four columns sidebar">
+                {% include sidebar.html %}
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+	var db = [];
+	{% for post in site.posts %}
+	db.push({
+		"title": "{{ post.title }}",
+		"thumbnail": "{{ post.thumbnail }}",
+		"url": "{{ post.url | prepend: site.baseurl }}",
+		"date": "{{ post.date | date: "%b %-d, %Y" }}",
+		"exerpt": "{{ post.excerpt | strip_html | truncate: 160 | strip_newlines }}"
+	});
+	{% endfor %}
+</script>
+<script type="text/javascript" src="js/search.js"></script>

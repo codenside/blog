@@ -9,14 +9,12 @@ layout: default
 				{% if page.thumbnail %}
                 <img src="{{ page.thumbnail }}">
                 {% endif %}
-				<div class="content">
-					<h2 class="post-title" itemprop="name headline"><a href="{{ post.url | prepend: site.baseurl }}">{{ page.title }}</a></h2>
-					<p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
+				<h2 class="post-title" itemprop="name headline"><a href="{{ post.url | prepend: site.baseurl }}">{{ page.title }}</a></h2>
+				<p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
 
-					<div class="post-content" itemprop="articleBody">
-					{{ content }}
-					</div>
-				  </div>
+				<div class="post-content" itemprop="articleBody">
+				{{ content }}
+				</div>
 				  {% assign is_next = false %}
 				  {% for post in site.posts %}
 				  	{% if is_next == true %}

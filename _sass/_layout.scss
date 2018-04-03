@@ -10,6 +10,13 @@ a {
 	padding-bottom: 3px;
 	border-bottom: 1px solid #0D2935;
 }
+input[type="search"] {
+	border-radius: 0;
+	width: 100%;
+	font-size: 18px;
+	border: 2px solid rgba(37,57,81,0.2);
+	padding: 20px 20px;
+}
 
 
 // HEADER
@@ -109,6 +116,10 @@ header p {
 .sidebar {
 	color: #0D2935;
 	text-align: right;
+
+	input:focus {
+		border: 2px solid #0D2935;
+	}
 	
 	&.preview {
 		border: 2px solid rgba(37,57,81,0.2);
