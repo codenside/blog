@@ -43,6 +43,14 @@ header p {
 		color: inherit;
 		font-weight: 700;
 	}
+	.cat-title {
+		font-weight: 700;
+		margin: 0 0 40px 0;
+		font-size: 30px;
+		border-bottom: 1px solid #0D2935;
+		display: inline-block;
+		padding-bottom: 5px;
+	}
 }
 .post-preview {
 	list-style: none;
