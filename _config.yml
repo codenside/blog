@@ -10,7 +10,7 @@ title: Codebreak
 email: codebreakme@gmail.com
 description: "Welcome to my programming world!"
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site
+url: "https://blog.codebreak.me" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
