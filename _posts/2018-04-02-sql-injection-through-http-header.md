@@ -38,6 +38,17 @@ To demonstrate this attack, I already wrote a vulnerable `PHP` script. Which all
 ?>
 {% endhighlight %}
 
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-4793783684558224"
+     data-ad-slot="5716606909"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
 The script is simply getting the user `IP` and `User-Agent` then storing it in the [database](https://en.wikipedia.org/wiki/Database). If you noticed there are two mistakes (**vulnerable**) in the script
 
 **1. Unfiltered value in fetch data from database**
@@ -74,6 +85,17 @@ if __name__ == "__main__":
 	main()
 {% endhighlight %}
 
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-4793783684558224"
+     data-ad-slot="5716606909"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
 > I forgot to tell you, I am testing this vulnerability with `Error Base SQL Injection` in mind, if the application has `Blind SQL Injection` or any other type then you can skip this step.
 
 If you run the script, you will see a SQL error on your response.
@@ -107,6 +129,17 @@ If you don't get any error then the application is vulnerable to [SQL injection]
 # Exploit Using SQLMap
 
 To exploit the application through `User-Agent` with [SQLMap](https://en.wikipedia.org/wiki/Sqlmap) you can use the following command.
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-4793783684558224"
+     data-ad-slot="5716606909"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 {% highlight bash %}
 $ sqlmap -u http://192.168.43.229/user-agent -p "User-Agent"
