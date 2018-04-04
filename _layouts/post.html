@@ -17,17 +17,21 @@ layout: default
 				<div class="post-content" itemprop="articleBody">
 				{{ content }}
 				</div>
-				  {% assign is_next = false %}
-				  {% for post in site.posts %}
-				  	{% if is_next == true %}
-					  	<br><br>
-				  		<a href="{{ post.url | prepend: site.baseurl }}" class="read-more">NEXT <span>&roarr;</span></a>
-				  	{% endif %}
+				{% assign is_next = false %}
+				{% assign is_done = false %}
+				{% for post in site.posts %}
+					{% if is_done == false %}
+					{% if is_next == true %}
+						<br><br>
+						<a href="{{ post.url | prepend: site.baseurl }}" class="read-more">NEXT <span>&roarr;</span></a>
+						{% assign is_done = true %}
+					{% endif %}
+					{% endif %}
 
 				  	{% if post.url == page.url %}
 				  		{% assign is_next = true %}
 				  	{% endif %}
-				  {% endfor %}
+				{% endfor %}
 
 				  <br><br><br>
 

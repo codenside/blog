@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Install a Flat Theme on Ubuntu"
-date:   2018-04-02 08:48:58 +1000
+date:   2018-04-04 08:48:58 +1000
 categories: linux
 thumbnail: https://camo.githubusercontent.com/86bb278f4b6dd119f904884fd7a47b1a7367a91a/687474703a2f2f692e696d6775722e636f6d2f4d3579786767512e706e673f31
 ---

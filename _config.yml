@@ -17,3 +17,5 @@ markdown: kramdown
 permalink: /:title
 gems:
   - jekyll-sitemap
+  - jekyll-paginate
+paginate: 3

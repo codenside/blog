@@ -51,6 +51,14 @@ header p {
 		display: inline-block;
 		padding-bottom: 5px;
 	}
+
+	.pagination a {
+		color: inherit;
+	}
+
+	.page_number {
+		padding: 0 10px;
+	}
 }
 .post-preview {
 	list-style: none;
