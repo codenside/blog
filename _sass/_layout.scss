@@ -202,6 +202,7 @@ header p {
 
 	img {
 		width: 100%;
+		cursor: pointer;
 	}
 
 	h1, h2, h3, h4 {
@@ -277,6 +278,36 @@ footer {
 		margin: 0;
 		display: inline-block;
 	}
+}
+
+
+#lightbox {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	width: 800px;
+	max-width: 95%;
+	z-index: 999;
+	border: 5px solid #FFF;
+	visibility: hidden;
+	opacity: 0;
+	transition: all .2s ease;
+	text-align: center;
+	background-color: #FFF;
+}
+
+#overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, .5);
+	z-index: 99;
+	visibility: hidden;
+	opacity: 0;
 }
 
 
