@@ -55,4 +55,38 @@ $.ready(function() {
 			"opacity": "0"
 		});
 	});
+
+
+	// header link reference
+	$.in($.select(".post h1").add(".post h2").add(".post h3").add(".post h4").add(".post h5").add(".post h6")).each(function(i, el) {
+		el = $.select(el);
+		el.css({ position: "relative", cursor: "pointer" });
+		id = el.html().toLowerCase().replace(/[$&+,:;=?@#|'<>.^*()%!-"\/]/ig, "").replace(/ /ig, "-")
+		el.attr("id", id);
+		el.prepend("<a href='#" + id + "'>#</a>");
+		$.select(el[0].getElementsByTagName('a')[0]).css({
+			position: "absolute",
+			top: "0",
+			left: "-30px",
+			color: "rgba(0,0,0,.28)",
+			opacity: "0",
+			transition: "all .2s ease"
+		});
+
+		el[0].addEventListener("mouseover", function() {
+			$.select(el[0].getElementsByTagName('a')[0]).css({
+				opacity: "1"
+			});
+		}, false);
+
+		el[0].addEventListener("click", function() {
+			this.getElementsByTagName('a')[0].click();
+		}, false);
+
+		el[0].addEventListener("mouseout", function() {
+			$.select(el[0].getElementsByTagName('a')[0]).css({
+				opacity: "0"
+			});
+		}, false);
+	});
 });
