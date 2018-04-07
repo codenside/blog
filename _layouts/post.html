@@ -62,3 +62,21 @@ layout: default
 	</div>
 
 </article>
+
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js"></script>
+<script type="text/javascript">
+	MathJax.Hub.Config({
+            extensions: ["tex2jax.js"],
+			TeX: {
+				extensions: ["AMSmath.js"]
+			},
+            jax: ["input/TeX", "output/HTML-CSS"],
+            tex2jax: {
+                inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+                displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+                processEscapes: true
+            },
+        "HTML-CSS": { availableFonts: ["LaTeX"] }
+      });
+</script>

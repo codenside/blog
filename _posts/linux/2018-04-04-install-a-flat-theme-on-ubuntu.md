@@ -6,7 +6,6 @@ categories: linux
 thumbnail: https://camo.githubusercontent.com/86bb278f4b6dd119f904884fd7a47b1a7367a91a/687474703a2f2f692e696d6775722e636f6d2f4d3579786767512e706e673f31
 ---
 
-
 Hello, world! welcome back, in this article I am going to show you how to install a flat the on [Ubuntu](https://en.wikipedia.org/wiki/Ubuntu_(operating_system)). For that I chose [Flatabulous](https://github.com/anmoljagetia/Flatabulous).
 
 [Flatabulous](https://github.com/anmoljagetia/Flatabulous) is an `open-source` and free theme for Ubuntu and other debian based Linux Systems. It's based on the Ultra-Flat theme.

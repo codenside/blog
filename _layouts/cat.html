@@ -13,10 +13,12 @@ layout: default
 			        {% for category in post.categories %}
 			            {% if category == title %}
 			            	<li class="post-preview">
-		                        {% if post.thumbnail %}
-		                        <img src="{{ post.thumbnail }}">
-		                        {% endif %}
 		                        <div class="content">
+
+		                        	{% if post.thumbnail %}
+			                        <img src="{{ post.thumbnail }}">
+			                        {% endif %}
+
 		                            <h2>
 		                                <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
 		                            </h2>
