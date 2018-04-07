@@ -6,7 +6,7 @@ categories: mathematics
 thumbnail: https://user-images.githubusercontent.com/37883010/38459483-89e80936-3aed-11e8-8228-fe2f9178bb90.png
 ---
 
-Hello guys, welcome back. In this article I am going to cover, how to write **Write Mathematical Formulas** in your markdown.
+Hello guys, welcome back. In this article I am going to cover, how to **Write Mathematical Formulas** in your markdown.
 
 In this article I am using `LaTex` parser, following is what [Wikipedia](https://en.wikipedia.org) says about `LaTex`:
 
